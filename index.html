@@ -184,20 +184,44 @@
       font-weight: bold;
     }
 
-    /* Button styling */
-    .join-btn {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 14px;
-      border-radius: 5px;
-      text-align: center;
-    }
+ /* Add fade-in and fade-out animation for the Join button */
+.join-btn {
+    text-color: #ffffff; /* Make the text color white */
+    background-color: #ff0000; /* Initial Red Background */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase text */
+    text-align: center;
+    display: inline-block;
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Make text bold */
+    animation: fade-color 5s infinite; /* Infinite fade animation */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
 
-    .join-btn:hover {
-      background-color: #0056b3;
+/* Add hover effect for scaling */
+.join-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Keyframes for fading background color */
+@keyframes fade-color {
+    0% {
+        background-color: #ff0000; /* Red */
     }
+    25% {
+        background-color: #00ff00; /* Green */
+    }
+    50% {
+        background-color: #0000ff; /* Blue */
+    }
+    75% {
+        background-color: #ffff00; /* Yellow */
+    }
+    100% {
+        background-color: #ff0000; /* Back to Red */
+    }
+}
   </style>
 </head>
 <body>
@@ -355,70 +379,69 @@
 </head>
 <body>
 
-<div id="favorite-games" class="container my-5">
+  <div id="favorite-games" class="container my-5">
     <h3 class="text-center mb-4">
         <img src="https://i.ibb.co.com/82zQyPx/unnamed-2.png" alt="Logo" class="logo">
         Tournament
     </h3>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 favorite-games">
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.ibb.co.com/9gYPgLF/Untitled-Project.jpg" class="card-img-top" alt="Game 1">
-          <div class="card-body">
-            <h5 class="card-title">Solo Battle Royale</h5>
-            <button class="join-btn">Join</button>
-          </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.ibb.co.com/9gYPgLF/Untitled-Project.jpg" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">Solo Battle Royale</h5>
+                    <a href="contact.html" class="btn join-btn">Join</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.ibb.co.com/tBkVpg5/Untitled-Project-2.jpg" class="card-img-top" alt="Game 2">
-          <div class="card-body">
-            <h5 class="card-title">Solo Clash Squad</h5>
-            <button class="join-btn">Join</button>
-          </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.ibb.co.com/tBkVpg5/Untitled-Project-2.jpg" class="card-img-top" alt="Game 2">
+                <div class="card-body">
+                    <h5 class="card-title">Solo Clash Squad</h5>
+                    <a href="contact.html" class="btn join-btn">Join</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.ibb.co.com/r24D04Z/DALL-E-2024-11-20-21-03-18-An-action-packed-Free-Fire-Lone-Wolf-mode-battle-scene-set-in-the-Iron-Ca.webp" class="card-img-top" alt="Game 3">
-          <div class="card-body">
-            <h5 class="card-title">Solo Lone Wolf</h5>
-            <button class="join-btn">Join</button>
-          </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.ibb.co.com/r24D04Z/DALL-E-2024-11-20-21-03-18-An-action-packed-Free-Fire-Lone-Wolf-mode-battle-scene-set-in-the-Iron-Ca.webp" class="card-img-top" alt="Game 3">
+                <div class="card-body">
+                    <h5 class="card-title">Solo Lone Wooolf</h5>
+                    <a href="contact.html" class="btn join-btn">Join</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.ibb.co.com/VQ46k1L/Leonardo-Phoenix-A-vibrant-digital-illustration-showcasing-two-1.png" class="card-img-top" alt="Game 6">
-          <div class="card-body">
-            <h5 class="card-title">Duo Battle Royale</h5>
-            <button class="join-btn">Join</button>
-          </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.ibb.co.com/VQ46k1L/Leonardo-Phoenix-A-vibrant-digital-illustration-showcasing-two-1.png" class="card-img-top" alt="Game 6">
+                <div class="card-body">
+                    <h5 class="card-title">Duo Battle Royale</h5>
+                    <a href="contact.html" class="btn join-btn">Join</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.ibb.co.com/nkfW0Qc/DALL-E-2024-11-20-20-57-32-A-stylized-and-action-packed-battle-scene-inspired-by-the-game-Free-Fire.webp" class="card-img-top" alt="Game 5">
-          <div class="card-body">
-            <h5 class="card-title">Duo Clash Squad</h5>
-            <button class="join-btn">Join</button>
-          </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.ibb.co.com/nkfW0Qc/DALL-E-2024-11-20-20-57-32-A-stylized-and-action-packed-battle-scene-inspired-by-the-game-Free-Fire.webp" class="card-img-top" alt="Game 5">
+                <div class="card-body">
+                    <h5 class="card-title">Duo Clash Squad</h5>
+                    <a href="contact.html" class="btn join-btn">Join</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://i.ibb.co.com/hWyjGFd/DALL-E-2024-11-20-21-36-29-A-dynamic-and-action-packed-Free-Fire-battle-scene-set-inside-a-large-ind.webp" class="card-img-top" alt="Game 6">
-          <div class="card-body">
-            <h5 class="card-title">Duo Lone Wolf</h5>
-            <button class="join-btn">Join</button>
-          </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.ibb.co.com/hWyjGFd/DALL-E-2024-11-20-21-36-29-A-dynamic-and-action-packed-Free-Fire-battle-scene-set-inside-a-large-ind.webp" class="card-img-top" alt="Game 6">
+                <div class="card-body">
+                    <h5 class="card-title">Duo Lone Wooolf</h5>
+                    <a href="contact.html" class="btn join-btn">Join</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  
    <!DOCTYPE html>
 <html lang="en">
 <head>
