@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Slim Header</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Slimmer and adjusted styling */
+    .navbar {
+      background: linear-gradient(135deg, #0078d7, #005bb5); /* Professional gradient */
+      color: white;
+      padding: 5px 20px; /* Reduced padding for slimmer header */
+    }
+.navbar-brand {
+      font-size: 1.8rem; /* Larger text for brand name */
+      font-weight: bold;
+      color: white;
+      margin-right: 200px; /* Shift brand text slightly to the right */
+      text-transform: uppercase; /* Capitalized text for emphasis */
+      letter-spacing: 1px; /* Add letter spacing for a clean look */
+      transition: color 0.3s ease;
+    }
+
+    .navbar-brand img {
+      width: 150px; /* Set logo width */
+      height: 35px; /* Set logo height */
+      margin-left: 10px; /* Space between text and logo */
+    }
+    
+    .navbar-brand:hover {
+      color: #ffdd57; /* Hover effect for brand name */
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      margin-left: 10px; /* Adjust link spacing */
+      margin-right: 10px;
+    }
+     
+
+    .nav-link:hover {
+      color: #ffdd57 !important; /* Attractive hover effect */
+    }
+
+    .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+@media (max-width: 700px) {
+      /* Adjustments for mobile */
+      .navbar {
+        padding: 10px 15px; /* Slightly more padding for mobile */
+      }
+      .navbar-brand {
+        font-size: 1.5rem; /* Adjust font size on smaller screens */
+     }
+  </style>
+</head>
+<body>
+    <!-- Header -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo Only -->
+      <a class="navbar-brand" href="index.html">
+        <img src="https://i.ibb.co.com/xLsDbYR/create-a-great-logo-with-text-ff-battlezone-text-c-Ch0-Hlx-XSQKO4-Qk-Rh6-XBVdw-Jx-Pr-WZTy-Scu6-Y3ir.png" alt="Logo">
+      </a>
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Join Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF BattleZone</title>
+  
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Inline CSS -->
+  <style>
+    /* Hover effect for cards */
+    .favorite-games .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .favorite-games .card:hover {
+      transform: translateY(-10px); /* Move the card up by 10px */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    }
+
+    /* Navbar custom styles */
+    .navbar {
+      background-color: #2d2d2d; /* Dark background for navbar */
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffd700 !important; /* Gold color on hover */
+    }
+
+    /* Notice Section */
+    .notice {
+      background-color: #ffcc00;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Carousel image styling */
+    .carousel-inner img {
+      width: 100%;
+      aspect-ratio: 16 / 6.5;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Game section styling */
+    #favorite-games .card-body {
+      text-align: center;
+    }
+
+    #favorite-games .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    #favorite-games .card-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Button styling */
+    .join-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .join-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .slider {
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .slider .list {
+      width: 100%;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slider .list .item {
+      flex-shrink: 0;
+      width: 100%;
+      position: relative;
+    }
+    .slider .list .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 7;
+      object-fit: cover;
+    }
+    .nextPrevArrows {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    .nextPrevArrows button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #14ff72cb;
+      border: none;
+      color: #fff;
+      font-family: monospace;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="https://i.ibb.co/RQKMnKv/20241123-001334-1.png" alt="Slide 1">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co/p2CK6Vr/20241123-001543.png" alt="Slide 2">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co/mTZpffR/20241123-001405-1.png" alt="Slide 3">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co/x2V9mzP/20241123-001526-1.png" alt="Slide 4">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co/QPpdJG8/20241123-001459-1.png" alt="Slide 5">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co/6Z4x8TX/20241123-001218-1.png" alt="Slide 6">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co.com/3Trh1QN/20241123-001304-1.png" alt="Slide 7">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co.com/N2XH0Gx/20241123-000957-1.png" alt="Slide 8">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co.com/dfbd1G7/20241123-001436-1.png" alt="Slide 9">
+        </div>
+        <div class="item">
+          <img src="https://i.ibb.co.com/DGPdv2f/DALL-E-2024-11-22-23-37-11-A-highly-realistic-and-immersive-image-of-a-Free-Fire-two-player-tourname.webp" alt="Slide 10">
+        </div>
+      </div>
+      <div class="nextPrevArrows">
+        <button class="prev"><</button>
+        <button class="next">></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+    const sliderList = document.querySelector('.slider .list');
+    const items = document.querySelectorAll('.slider .list .item');
+    let currentIndex = 0;
+
+    function updateSlider(index) {
+      const offset = -index * 100;
+      sliderList.style.transform = `translateX(${offset}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % items.length;
+      updateSlider(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      updateSlider(currentIndex);
+    });
+
+    // Auto-slide functionality
+    function autoSlide() {
+      currentIndex = (currentIndex + 1) % items.length;
+      updateSlider(currentIndex);
+    }
+
+    setInterval(autoSlide, 3000); // Change the slide every 3 seconds
+  </script>
+</body>
+</html>
+   <!-- Favorite Games Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament</title>
+    <style>
+        .logo {
+            width: 40px;  /* Set the logo size to 40px */
+            height: auto;
+            margin-right: 10px;  /* Add space between the logo and the text */
+            vertical-align: middle;  /* Vertically align the logo with the text */
+        }
+    </style>
+</head>
+<body>
+
+<div id="favorite-games" class="container my-5">
+    <h3 class="text-center mb-4">
+        <img src="https://i.ibb.co.com/82zQyPx/unnamed-2.png" alt="Logo" class="logo">
+        Tournament
+    </h3>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 favorite-games">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.ibb.co.com/9gYPgLF/Untitled-Project.jpg" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">Solo Battle Royale</h5>
+            <button class="join-btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.ibb.co.com/tBkVpg5/Untitled-Project-2.jpg" class="card-img-top" alt="Game 2">
+          <div class="card-body">
+            <h5 class="card-title">Solo Clash Squad</h5>
+            <button class="join-btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.ibb.co.com/r24D04Z/DALL-E-2024-11-20-21-03-18-An-action-packed-Free-Fire-Lone-Wolf-mode-battle-scene-set-in-the-Iron-Ca.webp" class="card-img-top" alt="Game 3">
+          <div class="card-body">
+            <h5 class="card-title">Solo Lone Wolf</h5>
+            <button class="join-btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.ibb.co.com/VQ46k1L/Leonardo-Phoenix-A-vibrant-digital-illustration-showcasing-two-1.png" class="card-img-top" alt="Game 6">
+          <div class="card-body">
+            <h5 class="card-title">Duo Battle Royale</h5>
+            <button class="join-btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.ibb.co.com/nkfW0Qc/DALL-E-2024-11-20-20-57-32-A-stylized-and-action-packed-battle-scene-inspired-by-the-game-Free-Fire.webp" class="card-img-top" alt="Game 5">
+          <div class="card-body">
+            <h5 class="card-title">Duo Clash Squad</h5>
+            <button class="join-btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.ibb.co.com/hWyjGFd/DALL-E-2024-11-20-21-36-29-A-dynamic-and-action-packed-Free-Fire-battle-scene-set-inside-a-large-ind.webp" class="card-img-top" alt="Game 6">
+          <div class="card-body">
+            <h5 class="card-title">Duo Lone Wolf</h5>
+            <button class="join-btn">Join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Us Section</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .follow-us {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            background-color: #fafafa;
+        }
+        .social-card {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: transform 0.2s, background-color 0.3s;
+            background-color: #ffffff;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+        .social-card:hover {
+            background-color: #f0f8ff;
+            transform: scale(1.02);
+        }
+        .social-card img {
+            width: 30px; /* Slightly larger icons */
+            height: 30px;
+            margin-right: 10px;
+        }
+        .social-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+            flex: 1;
+        }
+        .social-row {
+            display: flex;
+            gap: 10px;
+        }
+        @media (max-width: 576px) {
+            .social-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container follow-us">
+    <h3 class="text-center mb-4">Follow Us</h3>
+    <div class="social-row">
+        <a href="https://www.facebook.com/sakhawat151363" target="_blank" class="social-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Icon">
+            <p>যেকোন সমস্যা সরাসরি আমাদের ফেসবুক পেজে মেসেজ দিন।</p>
+        </a>
+        <a href="https://wa.me/8801301986034" target="_blank" class="social-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Icon">
+            <p>যেকোন সমস্যা সরাসরি আমাদের WhatsApp এ মেসেজ দিন।</p>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer with Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .footer {
+            background-color: #0a1e41;
+            color: white;
+            padding: 20px 0;
+        }
+        .contact-box {
+            background-color: #0e2a5a;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-box img {
+            margin-right: 10px;
+        }
+        .payment-methods img {
+            width: 50px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="footer">
+    <div class="container">
+        <div class="row text-center text-md-left">
+            <div class="col-md-4 mb-4">
+                <h5>SUPPORT</h5>
+                <a href="https://wa.me/8801301986034" target="_blank" class="contact-box mx-auto mx-md-0" style="text-decoration: none; color: inherit;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp Icon" width="24">
+                    <div>
+                        <p class="mb-0">9AM – 12PM</p>
+                        <p class="mb-0">01301986034</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>STAY CONNECTED</h5>
+                <p class="mb-0">FF BattleZone (Free Fire Tournament)</p>
+                <p class="mb-0">Bermuda, Kalahari, Purgatory</p>
+                <p class="mb-0">Email: sakhawat19803@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <h5>PAYMENT METHODS</h5>
+                <div class="payment-methods">
+                    <img src="https://i.ibb.co.com/0f1whSs/unnamed.webp" alt="bKash">
+                    <img src="https://i.ibb.co.com/s22ZcPV/unnamed-2.jpg" alt="Nagad">
+                    <img src="https://i.ibb.co.com/G59kGZ2/unnamed-4.png" alt="Rocket">
+                    <img src="https://i.ibb.co.com/r0GwLLK/unnamed-5.png" alt="Upay">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+  
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF BattleZone</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your website content goes here -->
+
+    <footer>
+        &copy; 2025 FF BattleZone. All rights reserved.
+    </footer>
+</body>
+</html>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

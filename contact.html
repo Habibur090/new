@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FFBattleZone</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>টুর্নামেন্ট রেজিস্ট্রেশন</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Body Styling */
+    body {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Centered Container */
+    .container {
+      margin-top: 50px;
+      max-width: 600px;
+    }
+
+    /* Form Styling */
+    .form-container {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    /* Form Heading */
+    .form-container h2 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 28px;
+    }
+
+    /* Form Label Styling */
+    .form-container .form-label {
+      color: #555;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    /* Input Fields */
+    .form-container .form-control {
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      height: 45px;
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+
+    .form-container .form-control:focus {
+      border-color: #00c9a7;
+      box-shadow: 0 0 10px rgba(0, 201, 167, 0.5);
+    }
+
+    /* Input Group Text */
+    .form-container .input-group-text {
+      background-color: #f4f4f4;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    /* Buttons */
+    .btn-submit {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background: linear-gradient(to right, #feb47b, #ff7e5f);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-return {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .btn-return:hover {
+      background: #0056b3;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-return a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Spinner Styling */
+    .spinner-border {
+      display: none;
+    }
+
+    /* Logo Styling */
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 120px;
+    }
+
+    /* Form Shadow Effect */
+    .form-container:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      transform: translateY(-5px);
+    }
+
+    /* Checkbox Styling */
+    .form-check-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    /* Select Dropdown */
+    .form-container select {
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      appearance: none;
+      background: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/svgs/solid/caret-down.svg') no-repeat right 10px center;
+      background-size: 15px;
+    }
+
+    .form-container select:focus {
+      border-color: #00c9a7;
+      box-shadow: 0 0 10px rgba(0, 201, 167, 0.5);
+    }
+
+    /* Footer for Aesthetic */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <img src="https://i.ibb.co.com/MG0CTLb/20241121-020814-1.png" alt="Logo" class="logo">
+      <h2 class="text-center">টুর্নামেন্ট রেজিস্ট্রেশন</h2>
+
+      <form id="registrationForm" action="https://formspree.io/f/mdkodyyv" method="POST">
+        <div class="mb-3">
+          <label for="playerName" class="form-label">প্লেয়ারের নাম</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-user-tie"></i></span>
+            <input type="text" class="form-control" id="playerName" name="playerName" placeholder="আপনার নাম লিখুন" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="playerID" class="form-label">প্লেয়ার আইডি</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-id-badge"></i></span>
+            <input type="text" class="form-control" id="playerID" name="playerID" placeholder="প্লেয়ার আইডি লিখুন" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="idLevel" class="form-label">আইডি লেভেল</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-trophy"></i></span>
+            <input type="number" class="form-control" id="idLevel" name="idLevel" placeholder="লেভেল (৫০-৯৯)" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">ইমেইল ঠিকানা</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="আপনার ইমেইল লিখুন" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">ফোন নম্বর</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="আপনার ফোন নম্বর লিখুন" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="transactionID" class="form-label">ট্রানজেকশন আইডি</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-receipt"></i></span>
+            <input type="text" class="form-control" id="transactionID" name="transactionID" placeholder="ট্রানজেকশন আইডি লিখুন">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="gameMode" class="form-label">গেম মোড নির্বাচন করুন</label>
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-gamepad"></i></span>
+            <select id="gameMode" name="gameMode" class="form-control" required>
+              <option value="" disabled selected>গেম মোড নির্বাচন করুন</option>
+              <option value="solo-battle">সোলো ব্যাটল রয়েল</option>
+              <option value="solo-clash">সোলো ক্ল্যাশ স্কোয়াড</option>
+              <option value="solo-lone-wolf">সোলো লোন উলফ</option>
+              <option value="duo-battle">ডুয়ো ব্যাটল রয়েল</option>
+              <option value="duo-clash">ডুয়ো ক্ল্যাশ স্কোয়াড</option>
+              <option value="duo-lone-wolf">ডুয়ো লোন উলফ</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="termsCheckbox" required>
+          <label class="form-check-label" for="termsCheckbox">আমি টুর্নামেন্টের শর্তাবলী মেনে চলতে সম্মত।</label>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitButton" disabled>
+          <span id="submitText">রেজিস্টার নাও</span>
+          <div class="spinner-border spinner-border-sm text-light" role="status" id="loadingSpinner">
+            <span class="visually-hidden">লোড হচ্ছে...</span>
+          </div>
+        </button>
+
+        <!-- Return to Home Button -->
+        <button type="button" class="btn-return">
+          <a href="index.html">হোমে ফিরে যান</a>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; ২০২৪ টুর্নামেন্ট। সকল অধিকার সংরক্ষিত।
+  </footer>
+
+  <script>
+    const idLevelInput = document.getElementById('idLevel');
+    const submitButton = document.getElementById('submitButton');
+
+    // Disable submit button initially
+    submitButton.disabled = true;
+
+    // Add event listener to ID level input
+    idLevelInput.addEventListener('input', function () {
+      const idLevelValue = parseInt(idLevelInput.value);
+
+      if (idLevelValue < 50) {
+        idLevelInput.style.backgroundColor = "#f8d7da"; // Red background for invalid input
+        submitButton.disabled = true;
+      } else {
+        idLevelInput.style.backgroundColor = ""; // Reset background to default
+        submitButton.disabled = false;
+      }
+    });
+
+    // Enable/Disable submit button based on form validation
+    document.getElementById('registrationForm').addEventListener('input', function () {
+      const isFormValid = document.getElementById('playerName').value &&
+        document.getElementById('playerID').value &&
+        document.getElementById('email').value &&
+        document.getElementById('phoneNumber').value &&
+        document.getElementById('idLevel').value >= 50;
+      submitButton.disabled = !isFormValid;
+    });
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
