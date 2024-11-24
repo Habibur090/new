@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Searchable profile list with photo upload feature">
+  <meta name="author" content="Your Name">
+  <title>Searchable Profile List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .header .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .header .menu a:hover {
+      color: #d1ecf1;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .search-bar {
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 600px;
+      height: 50px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .profile-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .profile-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      transition: background-color 0.3s;
+      min-height: 60px;
+    }
+
+    .profile-item.active {
+      background-color: #d1ecf1;
+    }
+
+    .profile-item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #ddd;
+    }
+
+    .profile-item a {
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .profile-item a:hover {
+      background-color: #0056b3;
+    }
+
+    .profile-item input[type="file"] {
+      display: none;
+    }
+
+    .upload-label {
+      cursor: pointer;
+      color: #007bff;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .upload-label:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">FF BattleZone</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Player List</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="searchName()" />
+    </div>
+    <ul class="profile-list" id="profileList">
+      <li class="profile-item">
+        <label class="upload-label">
+          <img id="photo1" src="https://i.ibb.co.com/51Js5cQ/e92fc9a7fe63dddc5ba22435e34f6228.jpg" alt="Profile Photo">
+          <input type="file" onchange="loadFile(event, 'photo1')">
+        </label>
+        <span>Arif Islam</span>
+        <a href="Login.html" target="_blank">View Profile</a>
+      </li>
+      <li class="profile-item">
+        <label class="upload-label">
+          <img id="photo2" src="https://i.ibb.co.com/6bD3h7L/5bc3d7f15f7ae8465d27d8f24d98bddb.jpg" alt="Profile Photo">
+          <input type="file" onchange="loadFile(event, 'photo2')">
+        </label>
+        <span>Tania Rahman</span>
+        <a href="Login1.html" target="_blank">View Profile</a>
+      </li>
+      <li class="profile-item">
+        <label class="upload-label">
+          <img id="photo3" src="https://i.ibb.co.com/0Mv9sB8/b4f1bbe03aa92bb76c98de842944a1e7.jpg" alt="Profile Photo">
+          <input type="file" onchange="loadFile(event, 'photo3')">
+        </label>
+        <span>Saurav Ahmed</span>
+        <a href="Login2.html" target="_blank">View Profile</a>
+      </li>
+      <li class="profile-item">
+        <label class="upload-label">
+          <img id="photo4" src="https://i.ibb.co.com/DPdcLpD/da323ea53c11a2f07c2d8c3ba266257f.jpg" alt="Profile Photo">
+          <input type="file" onchange="loadFile(event, 'photo4')">
+        </label>
+        <span>Mahmuda Hossain</span>
+        <a href="Login3.html" target="_blank">View Profile</a>
+      </li>
+      <li class="profile-item">
+        <label class="upload-label">
+          <img id="photo5" src="https://i.ibb.co.com/kXX6dLd/bc44079081580c7655ed00459b475003.jpg" alt="Profile Photo">
+          <input type="file" onchange="loadFile(event, 'photo5')">
+        </label>
+        <span>Nafisa Khan</span>
+        <a href="Login4.html" target="_blank">View Profile</a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    // Function to handle profile photo upload
+    function loadFile(event, photoId) {
+      const photo = document.getElementById(photoId);
+      photo.src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    // Search function
+    function searchName() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const list = document.getElementById("profileList");
+      const items = list.getElementsByClassName("profile-item");
+
+      let found = false;
+
+      for (let i = 0; i < items.length; i++) {
+        const name = items[i].getElementsByTagName("span")[0].innerText.toLowerCase();
+
+        // Reset all items' background color
+        items[i].classList.remove("active");
+
+        if (name.includes(filter)) {
+          if (!found) {
+            // Move the matched item to the top
+            list.insertBefore(items[i], list.firstChild);
+            items[i].classList.add("active");
+            found = true;
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>
