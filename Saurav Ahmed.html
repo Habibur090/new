@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>userprofile.html</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Fire Tournament - User Account</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* General Styling */
+    body {
+      background-color: #f8f9fa;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0px;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #007bff;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .navbar-brand i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* Card Styling */
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Button Styling */
+    .btn-custom {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      width: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+      color: #fff;
+    }
+
+    /* Profile Image Styling */
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #007bff;
+      margin-bottom: 20px;
+    }
+
+    /* Typography and Spacing */
+    h3, p {
+      margin-bottom: 15px;
+    }
+    .info-title {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* Button Group */
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Footer Styling */
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Icon Styling */
+    .icon {
+      font-size: 1.2rem;
+      color: #007bff;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-crown"></i> <!-- Added Header Icon -->
+        FF BattleZone
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-home icon"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-envelope icon"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="card text-center">
+    <div class="card-body">
+      <img src="https://i.ibb.co.com/0Mv9sB8/b4f1bbe03aa92bb76c98de842944a1e7.jpg" alt="User Avatar" class="profile-img">
+      <h3><i class="fas fa-user icon"></i>John Doe</h3>
+      <p><span class="info-title"><i class="fas fa-id-card icon"></i>Player ID:</span>12345678</p>
+      <p><span class="info-title"><i class="fas fa-envelope icon"></i>Email:</span>johndoe@gmail.com</p>
+      <p><span class="info-title"><i class="fas fa-phone icon"></i>Phone:</span>+880123456789</p>
+      <p><span class="info-title"><i class="fas fa-lock icon"></i>Four-Digit Passcode:</span>1234</p>
+    </div>
+  </div>
+
+  <!-- Account Details Section -->
+  <div class="card text-center">
+    <div class="card-header"><i class="fas fa-info-circle icon"></i>Account Details</div>
+    <div class="card-body">
+      <p><span class="info-title"><i class="fas fa-gamepad icon"></i>Game Account ID:</span>987654321</p>
+      <p><span class="info-title"><i class="fas fa-level-up-alt icon"></i>Level:</span>45</p>
+      <p><span class="info-title"><i class="fas fa-wallet icon"></i>Balance:</span>৳5000</p>
+      <p><span class="info-title"><i class="fas fa-hand-holding-usd icon"></i>Withdrawn Amount:</span>৳2000</p>
+      <p><span class="info-title"><i class="fas fa-play-circle icon"></i>Tournaments Played:</span>30</p>
+      <p><span class="info-title"><i class="fas fa-trophy icon"></i>Tournaments Won:</span>15</p>
+      <p><span class="info-title"><i class="fas fa-times-circle icon"></i>Tournaments Lost:</span>15</p>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-group">
+    <a href="add-fund.html" class="btn btn-custom"><i class="fas fa-plus-circle"></i>Add Fund</a>
+    <a href="withdraw.html" class="btn btn-custom"><i class="fas fa-wallet"></i>Withdraw</a>
+ </div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Free Fire Tournament. All rights reserved. | <a href="#"><i class="fas fa-user-shield icon"></i>Privacy Policy</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
