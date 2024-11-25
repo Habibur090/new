@@ -13,91 +13,84 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<style>
-  /* General Body Styling */
-  body {
-    background-color: #f4f4f9;
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    padding-top: 0px; /* Header একেবারে উপরে রাখার জন্য */
-  }
-  /* General Body Styling */
-  body {
-    background-color: #f4f4f9;
-    margin: 0;
-    font-family: "Arial", sans-serif;
-  }
+  <style>
+    /* General Body Styling */
+    body {
+      background-color: #f4f4f9;
+      margin: 0;
+      font-family: "Arial", sans-serif;
+    }
 
-  /* Navbar Styling */
-  .navbar {
-    background-color: #007bff;
-    width: 100%;
-    margin-bottom: 30px; /* Header এর নিচে জায়গা */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .navbar-brand, .nav-link {
-    color: #fff !important;
-    font-weight: bold;
-  }
-  .navbar-brand i {
-    margin-right: 10px;
-    font-size: 1.5rem;
-    vertical-align: middle;
-  }
-  .navbar-toggler-icon {
-    filter: invert(1); /* Makes the toggler icon white */
-  }
-  .nav-link i {
-    font-size: 1rem;
-    margin-right: 8px;
-  }
+    /* Navbar Styling */
+    .navbar {
+      background-color: #007bff;
+      width: 100%;
+      margin-bottom: 30px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
 
-  /* Login Section Styling */
-  .login-container {
-    background: #fff;
-    padding: 20px 30px; /* Padding কমানো হয়েছে */
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    max-width: 320px; /* Box এর প্রস্থ ছোট করা হয়েছে */
-    margin: 200px auto; /* পেজের নিচে নিয়ে আসার জন্য */
-  }
-  .login-container h2 {
-    margin-bottom: 15px; /* শিরোনামের ফাঁকা কমানো */
-    color: #333;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px; /* শিরোনামের ফন্ট আকার কমানো */
-  }
-  .form-control {
-    height: 40px; /* ইনপুট বক্স ছোট করা */
-    font-size: 14px;
-  }
-  .btn {
-    font-size: 14px; /* বাটনের ফন্ট আকার ছোট করা */
-    height: 40px;
-  }
-  .footer-text {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 12px; /* ফন্ট আকার ছোট করা */
-    color: #888;
-  }
-  .footer-text a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  .footer-text a:hover {
-    text-decoration: underline;
-  }
-  .error-message {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-</style>
+    /* Adjust icon spacing */
+    .nav-link i {
+      margin-right: 12px; /* Increased space between icon and text */
+      font-size: 1rem;
+    }
 
+    /* Login Section Styling */
+    .login-container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 320px;
+      margin: 200px auto;
+    }
+    .login-container h2 {
+      margin-bottom: 15px;
+      color: #333;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .form-control {
+      height: 40px;
+      font-size: 14px;
+    }
+    .btn {
+      font-size: 14px;
+      height: 40px;
+    }
+    .footer-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 12px;
+      color: #888;
+    }
+    .footer-text a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+    .error-message {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
 
+    /* Eye icon styling */
+    .input-group-text {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -105,11 +98,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <!-- Brand Logo -->
         <a class="navbar-brand" href="#">
           <i class="fas fa-crown"></i> FF BattleZone
         </a>
-        <!-- Toggler Button -->
         <button 
           class="navbar-toggler" 
           type="button" 
@@ -121,14 +112,13 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-home icon"></i>Home</a>
+              <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-envelope icon"></i>Contact</a>
+              <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact</a>
             </li>
           </ul>
         </div>
@@ -140,7 +130,7 @@
   <div class="login-container">
     <h2>Login</h2>
     <!-- Passcode Input -->
-    <div class="mb-3">
+    <div class="input-group mb-3">
       <input 
         type="password" 
         id="passcode" 
@@ -148,11 +138,13 @@
         placeholder="Enter your passcode" 
         aria-label="Passcode"
       />
-      <p id="error-message" class="error-message"></p>
+      <span class="input-group-text" onclick="togglePasscodeVisibility()">
+        <i id="eye-icon" class="fas fa-eye"></i>
+      </span>
     </div>
+    <p id="error-message" class="error-message"></p>
     <!-- Login Button -->
     <button class="btn btn-primary w-100" onclick="redirectToPage()">Login</button>
-    <!-- Footer Text -->
     <p class="footer-text">
       Forgot your passcode? <a href="#">Get Help</a>
     </p>
@@ -176,15 +168,29 @@
 
     // Redirect function
     function redirectToPage() {
-      const passcode = document.getElementById("passcode").value.trim(); // Get passcode input
+      const passcode = document.getElementById("passcode").value.trim();
       const errorMessage = document.getElementById("error-message");
 
       if (userPages[passcode]) {
-        // Redirect if passcode is correct
         window.location.href = userPages[passcode];
       } else {
-        // Show error message if passcode is incorrect
         errorMessage.textContent = "Invalid passcode. Please try again.";
+      }
+    }
+
+    // Toggle passcode visibility
+    function togglePasscodeVisibility() {
+      const passcodeInput = document.getElementById("passcode");
+      const eyeIcon = document.getElementById("eye-icon");
+
+      if (passcodeInput.type === "password") {
+        passcodeInput.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passcodeInput.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
       }
     }
   </script>
