@@ -1,165 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-    // Check if Service Worker is supported in the browser
-    if ('serviceWorker' in navigator) {
-        // Register the Service Worker
-        navigator.serviceWorker.register('/service-worker.js')
-            .then(function(registration) {
-                console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch(function(error) {
-                console.log('Service Worker registration failed:', error);
-            });
-    } else {
-        console.log('Service Worker is not supported in this browser.');
-    }
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Slim Header</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Slimmer and adjusted styling */
-    .navbar {
-      background: linear-gradient(135deg, #0078d7, #005bb5); /* Professional gradient */
-      color: white;
-      padding: 5px 20px; /* Reduced padding for slimmer header */
-    }
-.navbar-brand {
-      font-size: 1.8rem; /* Larger text for brand name */
-      font-weight: bold;
-      color: white;
-      margin-right: 200px; /* Shift brand text slightly to the right */
-      text-transform: uppercase; /* Capitalized text for emphasis */
-      letter-spacing: 1px; /* Add letter spacing for a clean look */
-      transition: color 0.3s ease;
-    }
-
-    .navbar-brand img {
-      width: 150px; /* Set logo width */
-      height: 35px; /* Set logo height */
-      margin-left: 10px; /* Space between text and logo */
-    }
-    
-    .navbar-brand:hover {
-      color: #ffdd57; /* Hover effect for brand name */
-      text-decoration: none;
-    }
-
-    .nav-link {
-      color: white !important;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      margin-left: 10px; /* Adjust link spacing */
-      margin-right: 10px;
-    }
-     
-
-    .nav-link:hover {
-      color: #ffdd57 !important; /* Attractive hover effect */
-    }
-
-    .navbar-toggler {
-      border-color: white;
-    }
-
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-@media (max-width: 700px) {
-      /* Adjustments for mobile */
-      .navbar {
-        padding: 10px 15px; /* Slightly more padding for mobile */
-      }
-      .navbar-brand {
-        font-size: 1.5rem; /* Adjust font size on smaller screens */
-     }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: #002147; /* Navy blue background */
+        }
+        .logo {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important; /* Gold color on hover */
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-  <nav class="navbar navbar-expand-lg">
+
+<nav class="navbar navbar-expand-lg navbar-dark header">
     <div class="container-fluid">
-      <!-- Logo Only -->
-      <a class="navbar-brand" href="index.html">
-        <img src="https://i.ibb.co.com/xLsDbYR/create-a-great-logo-with-text-ff-battlezone-text-c-Ch0-Hlx-XSQKO4-Qk-Rh6-XBVdw-Jx-Pr-WZTy-Scu6-Y3ir.png" alt="Logo">
-      </a>
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="playerlist.html">Player List</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Join Now</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand logo" href="#">FF BattleZone</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="playerlist.html">Player List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FF BattleZone</title>
-  
-  <!-- Bootstrap CSS Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Inline CSS -->
-  <style>
-    /* Navbar custom styles */
-    .navbar {
-      background-color: #2d2d2d; /* Dark background for navbar */
-    }
-
-    .navbar-brand, .nav-link {
-      color: white !important;
-    }
-
-    .navbar-brand:hover, .nav-link:hover {
-      color: #ffd700 !important; /* Gold color on hover */
-    }
-
-    /* Notice Section */
-    .notice {
-      background-color: #ffcc00;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      font-size: 18px;
-    }
-
-    /* Carousel image styling */
-    .carousel-inner img {
-      width: 100%;
-      aspect-ratio: 16 / 6.5;
-      object-fit: cover;
-      transition: transform 0.5s ease-in-out;
-    }
-  </style>
-</head>
-<body>
 
 <!DOCTYPE html>
 <html lang="en">
